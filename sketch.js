@@ -29,8 +29,11 @@ function draw()
     groundObject.display();
     dustbinObj.display();
     paperObject.display();
+}
 
-    if (keyIsDown('up'))
+function keyPressed()
+{
+    if(keyCode === UP_ARROW)
     {
         Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:130,y:-145});
     }
