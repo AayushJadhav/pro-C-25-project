@@ -35,7 +35,7 @@ class dustbin
 		//strokeWeight(4);
 		angleMode(RADIANS)
 		fill(255)
-		rotate(this.angle)
+		rotate(this.leftWallBody.angle)
 		//rect(0,0,this.wallThickness, this.dustbinHeight);
 		pop()
 
@@ -45,7 +45,7 @@ class dustbin
 		//strokeWeight(4);
 		angleMode(RADIANS)
 		fill(255)
-		rotate(-1*this.angle)
+		rotate(-1*this.rightWallBody.angle)
 		//rect(0,0,this.wallThickness, this.dustbinHeight);
 		pop()
 
