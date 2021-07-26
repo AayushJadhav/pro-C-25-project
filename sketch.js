@@ -11,7 +11,7 @@ function setup()
 {
     createCanvas(1600, 700);
 
-    paperObject = new Paper(200, 640, 20);
+    paperObject = new Paper(200, 640);
 
     engine = Engine.create();
     world = engine.world;
