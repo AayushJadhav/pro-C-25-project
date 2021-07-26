@@ -11,13 +11,12 @@ function setup()
 {
     createCanvas(1600, 700);
 
-    paperObject = new Paper(200, 640, 20);
-
     engine = Engine.create();
     world = engine.world;
 
     groundObject=new ground(width/2,670,width,20);
     dustbinObj=new dustbin(1200,650);
+    paperObject = new Paper(200, 450, 70);
 }
 
 
