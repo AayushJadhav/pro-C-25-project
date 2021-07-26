@@ -1,6 +1,6 @@
 class Paper
 {
-    constructor(x, y)
+    constructor(x, y, r)
     {
         var options = {
             isStatic: false,
@@ -8,8 +8,8 @@ class Paper
             friction: 0,
             density: 1.2
         }
-        this.body = Bodies.circle(x, y, 20, options);
-        this.radius = 20;
+        this.body = Bodies.circle(x, y, r, options);
+        this.radius = r;
         this.image = loadImage("paper.png");
         World.add(world, this.body);
     }
